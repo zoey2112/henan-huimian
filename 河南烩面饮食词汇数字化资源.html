@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>河南烩面饮食词汇学习</title>
+<style>
+body{margin:0;background:#f5f1e9;color:#26343e;font-family:"Microsoft YaHei",Arial,sans-serif;line-height:1.65}.wrap{max-width:960px;margin:auto;padding:22px}
+header,section{background:#fffdf8;border:1px solid #e5dacb;border-radius:20px;padding:22px;margin-bottom:18px}h1{margin:4px 0;font-size:32px}h2{margin:0 0 6px}.muted{color:#667785;font-size:14px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:white;border:1px solid #e5dacb;border-radius:15px;padding:14px;cursor:pointer}.card.active,.card:hover{border:2px solid #a84d2d}.emoji{font-size:42px;background:#f8eadc;border-radius:12px;text-align:center;padding:12px}.word{font-size:24px;font-weight:bold;margin-top:8px}.tag{color:#a84d2d;font-size:13px}.detail{margin-top:14px;padding:16px;background:#f8f2e9;border-radius:14px}.options{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.opt,button{border:1px solid #d6cabc;border-radius:10px;padding:9px 14px;background:#fff;cursor:pointer;font:inherit}.opt.selected{background:#f4dfce;border-color:#a84d2d}.primary{background:#a84d2d;color:white;border:0}.q{padding:14px 0;border-bottom:1px solid #e5dacb}.feedback{font-size:14px;color:#2e7556}.note{border-left:3px solid #cda582;padding-left:10px;color:#667785;font-size:13px}.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}@media(max-width:650px){.cards{grid-template-columns:repeat(2,1fr)}.wrap{padding:12px}header,section{padding:16px}}
+</style></head><body><div class="wrap">
+<header><div class="tag">数字化教学资源 · 国际中文教育</div><h1>河南烩面：饮食词汇学习</h1><div class="muted">点击词汇卡查看词义、常见搭配和例句，再完成互动练习。</div></header>
+<section><h2>一、饮食词汇图卡</h2><p class="muted">通过词义、搭配和情境学习味道与口感词汇；图片本身不能证明食物的真实味道。</p>
+<div class="cards" id="cards">
+<div class="card active" data-w="浓郁"><div class="emoji">🍲</div><div class="word">浓郁</div><div class="muted">nóng yù</div><div class="tag">味道／香气</div></div>
+<div class="card" data-w="劲道"><div class="emoji">🍜</div><div class="word">劲道</div><div class="muted">jìng dao</div><div class="tag">口感</div></div>
+<div class="card" data-w="鲜美"><div class="emoji">🥣</div><div class="word">鲜美</div><div class="muted">xiān měi</div><div class="tag">味道</div></div>
+<div class="card" data-w="爽滑"><div class="emoji">🥢</div><div class="word">爽滑</div><div class="muted">shuǎng huá</div><div class="tag">口感</div></div></div>
+<div class="detail" id="detail"></div></section>
+<section><h2>二、口感描述互动练习</h2><p class="muted">阅读情境，选择最合适的词语。完成四题后点击“查看答案”。</p><div id="quiz"></div>
+<div class="row"><button class="primary" id="check">查看答案</button><button id="reset">重新作答</button></div><h3 id="result"></h3></section>
+<section><h2>三、表达练习</h2><p>请使用“吃起来……”或“……很……”完成句子。没有实际品尝时，可以根据给定情境练习表达，不必声称这是自己的真实感受。</p>
+<ol><li>面条有弹性、有嚼劲：面条吃起来很<strong>劲道</strong>。</li><li>汤的香气比较浓厚：这碗汤闻起来香气<strong>浓郁</strong>。</li><li>汤的味道鲜鲜的、可口：人们常说这碗汤味道<strong>鲜美</strong>。</li><li>食物入口顺滑、细腻：这种面条的口感比较<strong>爽滑</strong>。</li></ol>
+<p class="note">教学提示：图片和文字可以帮助学生学习词义及语言搭配，但不能代替真实品尝。若课堂没有安排品尝，教学目标宜表述为“理解并运用饮食口感与味道词汇”。</p></section>
+<p class="muted" style="text-align:center">可离线打开 · 适用于课堂投屏或学生自主练习</p></div>
+<script>
+const words={
+"浓郁":["nóng yù","味道或香气浓厚、明显，给人丰富的感觉。","汤汁浓郁、香味浓郁","这段文字介绍说，汤汁味道浓郁。","这是语言情境示例，不代表仅凭图片就能确认食物的实际味道。"],
+"劲道":["jìng dao","食物有弹性、有嚼劲，咀嚼时不容易软烂。","面条劲道、口感劲道","根据文字描述，可以说：“面条吃起来很劲道。”","可以通过词义解释和情境描述学习；真实口感仍以实际品尝为准。"],
+"鲜美":["xiān měi","味道鲜鲜的、可口，常用来形容汤或食物的味道。","汤味鲜美、味道鲜美","人们常用“汤味鲜美”来称赞一碗汤。","这是常见的语言搭配示例，不是对当前食物味道的实测结论。"],
+"爽滑":["shuǎng huá","入口顺滑、细腻，不粗糙。","口感爽滑、爽滑的面条","可以用“口感爽滑”描述入口顺滑的面条。","可通过词义解释和情境句理解，不要求学生仅凭图片判断。"]};
+function show(w){document.querySelectorAll('.card').forEach(c=>c.classList.toggle('active',c.dataset.w===w));let d=words[w];document.getElementById('detail').innerHTML='<h3>'+w+'（'+d[0]+'）</h3><p><b>词义：</b>'+d[1]+'</p><p><b>常见搭配：</b>'+d[2]+'</p><p><b>例句：</b>'+d[3]+'</p><p class="note">'+d[4]+'</p>'}
+document.querySelectorAll('.card').forEach(c=>c.onclick=()=>show(c.dataset.w));show('浓郁');
+const qs=[
+["1. 面条有弹性，咀嚼时很有嚼劲。",["浓郁","劲道","鲜美","爽滑"],"劲道","“劲道”强调有弹性、有嚼劲，常用于面条。"],
+["2. 形容汤的味道或香气比较浓厚。",["爽滑","鲜美","浓郁","劲道"],"浓郁","“浓郁”可以形容汤汁或香气浓厚。"],
+["3. 形容汤的味道鲜鲜的、可口。",["鲜美","劲道","爽滑","浓郁"],"鲜美","“鲜美”常用于描述汤或食物的味道。"],
+["4. 形容食物入口顺滑、细腻。",["劲道","浓郁","爽滑","鲜美"],"爽滑","“爽滑”强调入口顺滑的口感。"]];
+let ans={},checked=false;
+function render(){let root=document.getElementById('quiz');root.innerHTML='';qs.forEach((q,i)=>{let d=document.createElement('div');d.className='q';d.innerHTML='<b>'+q[0]+'</b><div class="options"></div><div class="feedback"></div>';q[1].forEach(o=>{let b=document.createElement('button');b.className='opt'+(ans[i]===o?' selected':'');b.textContent=o;b.onclick=()=>{ans[i]=o;checked=false;document.getElementById('result').textContent='';render()};d.querySelector('.options').appendChild(b)});if(checked)d.querySelector('.feedback').textContent=(ans[i]===q[2]?'回答正确。':'正确答案：'+q[2]+'。')+q[3];root.appendChild(d)})}
+document.getElementById('check').onclick=()=>{if(Object.keys(ans).length<4){document.getElementById('result').textContent='请先完成全部 4 题。';return}checked=true;render();document.getElementById('result').textContent='你的得分：'+qs.filter((q,i)=>ans[i]===q[2]).length+'/4'};
+document.getElementById('reset').onclick=()=>{ans={};checked=false;document.getElementById('result').textContent='';render()};render();
+</script></body></html>
